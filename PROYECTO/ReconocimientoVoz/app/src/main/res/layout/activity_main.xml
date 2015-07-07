@@ -6,36 +6,33 @@
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
     android:onClick="onButtonclick">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/emtystr"
+        android:text="@string/emptystr"
         android:id="@+id/TVresult"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="101dp" />
+        android:layout_marginTop="95dp" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageButton"
-        android:src="@drawable/micro"
-        android:layout_below="@+id/TVresult"
+        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="66dp"
+        android:src="@drawable/micro"
         android:onClick="onButtonClick" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text=" Tap on mic to speak"
+        android:text="Tap on mic to speak"
         android:id="@+id/textView"
         android:layout_below="@+id/imageButton"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="38dp" />
-
 </RelativeLayout>

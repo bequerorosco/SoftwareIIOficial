@@ -24,7 +24,7 @@ public class LayoutActivity extends Activity{
     public void onCreate(Bundle savedInstance ) {
 
         super.onCreate(savedInstance);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.table_layout);
 
         userNameEditText = (EditText) findViewById(R.id.editTextUsername);
         passwordEditText = (EditText) findViewById(R.id.editTextPassword);
@@ -37,7 +37,7 @@ public class LayoutActivity extends Activity{
                 if(userNameEditText.getText().toString().equals("bop") &&
                         passwordEditText.getText().toString().equals("bop")){
 
-                   finish();
+                   setContentView(R.layout.activity_main);
                 }else{
 
                     Log.d("login","error user/password");
